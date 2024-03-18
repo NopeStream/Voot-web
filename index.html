@@ -963,7 +963,7 @@ html.darktheme{
 <div class="toolbar">
 	<div class="sel-lang">
 	</div>
-    <button class="sel-dark-toggle" id="toggle-darkmod" aria-label="Dark Modes" ><svg class="i__moon" width="24" height="24"><use xlink:href="#i__moon"></use></svg><svg class="i__sun" width="24" height="24" style="display:none;"><use xlink:href="#i__sun"></use></svg></button>
+   
 </div>
 <script>const g=e=>document.getElementById(e),classes=g("h").classList,cl="darktheme";localStorage.getItem("toggled-ttl")>Date.now()&&classes.toggle(cl,localStorage.getItem("toggled")),g("toggle-darkmod").addEventListener("click",function(e){e.preventDefault(),classes.contains(cl)?(localStorage.removeItem("toggled"),localStorage.removeItem("toggled-ttl"),classes.remove(cl)):(localStorage.setItem("toggled",1),localStorage.setItem("toggled-ttl",Date.now()+5184e6),classes.add(cl))});</script>
 
